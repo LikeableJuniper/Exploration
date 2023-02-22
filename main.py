@@ -75,7 +75,7 @@ def distance(pos1, pos2):
 
 
 def pickRandomPos(field: list[list[Cell]], allowWater=False, allowBuilding=False, allowUnit=False):
-    size = len(field), len(field[0])
+    size = len(field)-1, len(field[0])-1
     while True:
         val = field[(x := random.randint(0, size[0]))][(y := random.randint(0, size[1]))]
         if not allowWater and val.cellType < 2:

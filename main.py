@@ -41,7 +41,7 @@ class Cell:
             if self.image:
                 pg.draw.rect(screen, (255, 0, 0), rect)
             if zoom >= renderZoom:
-                pg.draw.rect(screen, (0, 0, 0), rect, 1) # Only drawing outlines when zoomed close makes game appear nice when zoomed out
+                pg.draw.rect(screen, (0, 0, 0), rect, 1) # Only drawing outlines when zoomed close makes game appear prettier when zoomed out
                 if self.image:
                     screen.blit(pg.transform.scale(self.image, rect[2:4]), rect[0:2])
 

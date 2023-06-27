@@ -114,7 +114,7 @@ while playing:
 
     currentSize = zoom * cellSize
 
-    # Additional ySub and xSub variables to combat incorrect cell display as good as possible (still not perfect)
+    # Additional ySub and xSub variables to counter incorrect cell display as good as possible (still not perfect)
     ySub = 0
     for y, row in enumerate(field):
         xSub = 0
